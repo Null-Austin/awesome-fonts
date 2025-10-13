@@ -1,0 +1,56 @@
+/* index.css - Dark theme with smaller text and ellipsis */
+:root{
+    --bg: #0f0f0f;
+    --surface: #1a1a1a;
+    --muted: #a1a1aa;
+    --text: #f4f4f5;
+    --accent: #60a5fa; /* blue-400 */
+    --radius: 10px;
+    --shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding:36px 12px;
+}
+
+.container{width:90vw;max-width:1200px;margin:0 auto}
+
+header h1{font-family:"Merriweather", Georgia, serif;font-weight:700;margin:0 0 6px 0;font-size:clamp(1.6rem,2.8vw,2.4rem);color:var(--text)}
+header p{margin:0;color:var(--muted);font-size:1rem}
+
+/* single column — each font preview is centered and wide (~90% of viewport) */
+#fonts{margin-top:28px;display:flex;flex-direction:column;gap:18px;align-items:center}
+
+.font{width:90vw;max-width:1100px;background:var(--surface);border-radius:var(--radius);padding:22px 28px;box-shadow:var(--shadow);transition:transform 200ms,box-shadow 200ms;border:1px solid rgba(255,255,255,0.1)}
+
+.font-name{margin:0;font-size:1rem;font-weight:600;color:var(--text);margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.sample{font-family:"Merriweather", Georgia, serif;font-size:1.1rem;color:var(--text);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.meta{display:flex;gap:12px;align-items:center;margin-top:12px;color:var(--muted);font-size:0.95rem}
+
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.1);color:var(--accent);padding:8px 12px;border-radius:8px;font-weight:600;cursor:pointer}
+.btn:hover{background:rgba(96,165,250,0.1)}
+
+@media (max-width:720px){
+    .font{width:94vw;padding:18px}
+    .sample{font-size:1rem}
+}
+
+@media (max-width:420px){
+    .font{width:98vw;padding:14px}
+    .sample{font-size:0.95rem}
+}
+
+/* allow long names to wrap on small screens */
+@media (max-width:520px){.font-name{white-space:normal;overflow:visible;text-overflow:unset}}
+
+.footer{margin-top:28px;color:var(--muted);font-size:0.9rem;text-align:center}
