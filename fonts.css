@@ -3,6 +3,7 @@
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Papyrus-Regular-stylesheet.css"); /* Papyrus */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/mistral-style.css"); /* Mistral */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/CurlzMT-stylesheet.css"); /* Curlz MT */
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Betelgeuse-stylesheet.css"); /* Betelgeuse */
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -18,4 +19,7 @@ body{
 }
 .curlzmt{
     font-family: "Curlz MT";
+}
+.betelgeuse{
+    font-family: "Betelgeuse";
 }
