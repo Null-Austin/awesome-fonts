@@ -20,6 +20,9 @@ body{
     -moz-osx-font-smoothing:grayscale;
     padding:36px 12px;
 }
+a{
+    color:var(--text);
+}
 
 .container{width:90vw;max-width:1200px;margin:0 auto}
 
