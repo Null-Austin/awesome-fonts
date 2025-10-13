@@ -4,6 +4,7 @@
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/mistral-style.css"); /* Mistral */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/CurlzMT-stylesheet.css"); /* Curlz MT */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Betelgeuse-stylesheet.css"); /* Betelgeuse */
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/ComicSansMS-stylesheet.css"); /* Comic Sans (btw i love this font) */
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -22,4 +23,7 @@ body{
 }
 .betelgeuse{
     font-family: "Betelgeuse";
+}
+.comicsans{
+    font-family: "Comic Sans MS";
 }
