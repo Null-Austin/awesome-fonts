@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap'); /* site fonts */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Neuland-Inline-stylesheet.css"); /* Neuland Inline */
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Papyrus-Regular-stylesheet.css"); /* Papyrus */
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/mistral-style.css");
 
 body{
     font-family: "Montserrat", sans-serif;
 }
 .neuland{
     font-family: "Neuland";
+}
+.papyrus{
+    font-family: "Papyrus";
+}
+.mistral{
+    font-family: "Mistral";
 }
