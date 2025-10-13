@@ -21,7 +21,8 @@ body{
     padding:36px 12px;
 }
 a{
-    color:var(--text);
+    color:var(--accent);
+    text-decoration: none;
 }
 
 .container{width:90vw;max-width:1200px;margin:0 auto}
