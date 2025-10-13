@@ -5,6 +5,7 @@
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/CurlzMT-stylesheet.css"); /* Curlz MT */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Betelgeuse-stylesheet.css"); /* Betelgeuse */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/ComicSansMS-stylesheet.css"); /* Comic Sans (btw i love this font) */
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/TimesNewRoman-stylesheet.css"); /* Times New Roman */
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -26,4 +27,7 @@ body{
 }
 .comicsans{
     font-family: "Comic Sans MS";
+}
+.timesnewroman{
+    font-family: 'Times New Roman';
 }
