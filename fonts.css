@@ -6,6 +6,7 @@
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Betelgeuse-stylesheet.css"); /* Betelgeuse */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/ComicSansMS-stylesheet.css"); /* Comic Sans (btw i love this font) */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/TimesNewRoman-stylesheet.css"); /* Times New Roman */
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/arial-style.css"); /* Arial */
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -30,4 +31,7 @@ body{
 }
 .timesnewroman{
     font-family: 'Times New Roman';
+}
+.arial{
+    font-family: 'Arial Regular';
 }
