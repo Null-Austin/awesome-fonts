@@ -36,3 +36,9 @@ body{
 .arial{
     font-family: 'Arial Regular';
 }
+.flowrounded{
+    font-family: "Flow Rounded", system-ui;
+}
+.cinzeldecorative{
+    font-family: "Cinzel Decorative", serif;
+}
