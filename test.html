@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code mhm</title>
+    <style>
+      textarea { width: 100%; height: 200px; font-family: monospace; }
+      .hint { color: #666; font-size: 0.9rem; margin-bottom: 0.5rem; }
+      .controls { margin-top: 0.5rem; display: flex; gap: 0.5rem; }
+      button { padding: 0.5rem 0.75rem; }
+    </style>
+  </head>
+  <body>
+    <form id="form" aria-label="Open HTML from clipboard or textarea" onsubmit="return false;">
+      <label for="html">Source code</label><br />
+      <div class="hint">
+        Tip: For clipboard reading to work your page must be served over HTTPS or run on localhost.
+        If clipboard access is not available, paste your code below.
+      </div>
+      <textarea id="html" placeholder="Paste code here if clipboard read is not available"></textarea><br />
+      <div class="controls">
+        <button id="open-text" type="button">Open from textarea</button>
+        <button id="open-clipboard" type="button">Open from clipboard</button>
+      </div>
+    </form>
+
+    <script>
+      // Returns the clipboard text if available. Otherwise returns null.
+      async function readClipboard() {
+        if (navigator.clipboard && typeof navigator.clipboard.readText === 'function') {
+          try {
+            return await navigator.clipboard.readText();
+          } catch (err) {
+            console.warn('Clipboard read failed:', err);
+            // Could be a permission/denied error — return null so caller can fallback
+            return null;
+          }
+        }
+        // Clipboard API not supported
+        return null;
+      }
+
+      function openPage(html) {
+        const w = window.open('', '_blank');
+        if (!w) {
+          alert('Popup blocked. Please allow popups or paste the HTML into a new tab manually.');
+          return;
+        }
+        w.document.open();
+        w.document.write(html);
+        w.document.close();
+      }
+
+      const htmlArea = document.getElementById('html');
+      const btnText = document.getElementById('open-text');
+      const btnClip = document.getElementById('open-clipboard');
+
+      // Open using the textarea content
+      btnText.addEventListener('click', () => {
+        btnText.disabled = true;
+        const content = htmlArea.value && htmlArea.value.trim() !== '' ? htmlArea.value : null;
+        if (!content) {
+          alert('Textarea is empty. Please paste or type your HTML into the textarea first.');
+          btnText.disabled = false;
+          return;
+        }
+        openPage(content);
+        setTimeout(() => { btnText.disabled = false; }, 500);
+      });
+
+      // Open using the clipboard (falls back to prompting the user if clipboard isn't available)
+      btnClip.addEventListener('click', async () => {
+        btnClip.disabled = true;
+
+        let content = await readClipboard();
+
+        if (content === null || content === '') {
+          // If clipboard read failed or empty, offer to use textarea as fallback
+          if (htmlArea.value && htmlArea.value.trim() !== '') {
+            const useTextarea = confirm('Clipboard access is not available or reading failed. Use the textarea content instead?');
+            if (useTextarea) {
+              content = htmlArea.value;
+            } else {
+              alert('Please ensure the page is served over HTTPS or run on localhost for clipboard access, or paste your HTML into the textarea.');
+              btnClip.disabled = false;
+              return;
+            }
+          } else {
+            alert('Clipboard API not available or reading failed, and textarea is empty. Please paste your source code into the textarea and try "Open from textarea".');
+            btnClip.disabled = false;
+            return;
+          }
+        }
+
+        openPage(content);
+        setTimeout(() => { btnClip.disabled = false; }, 500);
+      });
+    </script>
+  </body>
+</html>
