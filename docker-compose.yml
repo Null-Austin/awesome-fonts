@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: awesome-fonts_web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      # Map the local repo folder (clone of awesome-fonts) into nginx html folder
+      - ./awesome-fonts:/usr/share/nginx/html:ro
+      # Optional: custom nginx config if you want (uncomment if you add it)
+      # - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    environment:
+      # no env vars needed for a simple static site
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
