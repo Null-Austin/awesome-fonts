@@ -8,12 +8,10 @@ services:
     ports:
       - "8080:80"
     volumes:
-      # Map the local repo folder (clone of awesome-fonts) into nginx html folder
+      # Mount your repo folder into nginx’s web root
       - ./awesome-fonts:/usr/share/nginx/html:ro
-      # Optional: custom nginx config if you want (uncomment if you add it)
+      # Optional custom nginx config
       # - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    environment:
-      # no env vars needed for a simple static site
     networks:
       - webnet
 
