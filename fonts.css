@@ -8,6 +8,7 @@
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/TimesNewRoman-stylesheet.css"); /* Times New Roman */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/arial-style.css"); /* Arial */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Flow+Rounded&family=Rock+Salt&family=Silkscreen:wght@400;700&display=swap'); /* Flow Rounded + Cinzel Decorative + Silkscreen + Rock Salt */
+@import url("https://cdn.jsdelivr.net/gh/Null-Austin/pb-assets@main/PhantomSans-stylesheet.css"); /* Phantom Sans */
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -47,4 +48,7 @@ body{
 }
 .rocksalt{
     font-family: "Rock Salt", cursive;
+}
+.phantomsans{
+    font-family: "Phantom Sans 0.7", sans-serif;
 }
