@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullscreen Popups</title>
+  </head>
+  <body>
+    <button onclick="clicker()">
+      This button will not do you well. (unless you have an ad blocker / popup
+      blocker)
+    </button>
+  </body>
+</html>
+
+<script>
+  async function clicker() {
+    // Configuration
+    const url = "";
+    const popupRows = 3; // number of popup windows vertically (you can adjust)
+    const popupCols = 3; // number of popup windows horizontally (you can adjust)
+    const delay = 2600; // delay between each full screen fill cycle in ms
+    var count = 0;
+
+    function fillScreenWithPopups() {
+      const screenWidth = window.screen.width;
+      const screenHeight = window.screen.height;
+      const popupWidth = Math.floor(screenWidth / popupCols);
+      const popupHeight = Math.floor(screenHeight / popupRows);
+
+      for (let row = 0; row < popupRows; row++) {
+        for (let col = 0; col < popupCols; col++) {
+          count += 1;
+          const left = col * popupWidth;
+          const top = row * popupHeight;
+          let _window = window.open(
+            url,
+            "_blank",
+            `width=${popupWidth},height=${popupHeight},left=${left},top=${top},resizable=yes,scrollbars=yes`,
+          );
+          if (_window) {
+            _window.document.write(
+              `${count} pages created! If this is stuck, please make sure you disable your ad blocker!`,
+            );
+          }
+        }
+      }
+    }
+
+    function repeatPopups() {
+      fillScreenWithPopups();
+      setTimeout(repeatPopups, delay);
+    }
+
+    // Don't immediately pop on page load (wait a tick)
+    setTimeout(repeatPopups, 500);
+  }
+</script>
+
+<!-- This code was a fun test, created with help of AI -->
