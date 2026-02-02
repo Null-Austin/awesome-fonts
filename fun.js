@@ -1,5 +1,11 @@
 // fun.js - Randomize font order on page load
 document.addEventListener('DOMContentLoaded', function() {
+
+    // delete  image if it doesnt load
+    document.querySelector("img").addEventListener("error",e=>{
+        e.target.remove();
+    })
+
     const fontsContainer = document.getElementById('fonts');
     const fontCards = Array.from(fontsContainer.children);
     
