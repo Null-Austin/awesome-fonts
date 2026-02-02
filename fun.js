@@ -2,9 +2,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // delete  image if it doesnt load
-    document.querySelector("img").addEventListener("error",e=>{
-        e.target.remove();
-    })
+    // document.querySelector("img").addEventListener("error",e=>{
+    //     e.target.remove();
+    // })
 
     const fontsContainer = document.getElementById('fonts');
     const fontCards = Array.from(fontsContainer.children);
