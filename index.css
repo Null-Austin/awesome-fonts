@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'SFPro';
+	font-style: normal;
+	font-weight: normal;
+	src: local('SF-Pro-Display-Regular'), url('https://cdn.jsdelivr.net/gh/chrisbull/font-collection@master/SFPro/SF-Pro-Display-Regular.otf') format('opentype');
+}
+
 /* index.css - Dark theme with smaller text and ellipsis */
 :root{
     --bg: #0f0f0f;
@@ -13,7 +20,7 @@
 html,body{height:100%}
 body{
     margin:0;
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-family: "SFPro";
     background:var(--bg);
     color:var(--text);
     -webkit-font-smoothing:antialiased;
