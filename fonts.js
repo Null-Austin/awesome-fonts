@@ -52,13 +52,13 @@ let root = async () => {
     // search
     const searchInput = document.getElementById("search-input");
     const searchStats = document.getElementById("search-stats");
+    const fontCards = Array.from(document.querySelectorAll("#fonts .font"));
 
     searchInput.addEventListener("input", () => {
       const query = searchInput.value.trim().toLowerCase();
       const t0 = performance.now();
-      const cards = document.querySelectorAll("#fonts .font");
       let visible = 0;
-      cards.forEach(card => {
+      fontCards.forEach(card => {
         const matches = !query || card.dataset.fontName.includes(query);
         card.style.display = matches ? "" : "none";
         if (matches) visible++;
