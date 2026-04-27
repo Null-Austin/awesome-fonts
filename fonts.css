@@ -1,85 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap"); /* site fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=swap"); /* site fonts incl. Montserrat */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Neuland-Inline-stylesheet.css"); /* Neuland Inline */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Papyrus-Regular-stylesheet.css"); /* Papyrus */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/mistral-style.css"); /* Mistral */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/CurlzMT-stylesheet.css"); /* Curlz MT */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Betelgeuse-stylesheet.css"); /* Betelgeuse */
-@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/ComicSansMS-stylesheet.css"); /* Comic Sans (btw i love this font) */
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/ComicSansMS-stylesheet.css"); /* Comic Sans MS */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/TimesNewRoman-stylesheet.css"); /* Times New Roman */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/arial-style.css"); /* Arial */
-@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&family=Cinzel+Decorative:wght@400;700;900&family=Eater&family=Flow+Rounded&family=Libre+Barcode+39&family=Mogra&family=Nabla&family=Playwrite+NZ+Guides&family=Rock+Salt&family=Rubik+Gemstones&family=Rubik+Storm&family=Sekuya&family=Silkscreen:wght@400;700&display=swap"); /* Flow Rounded + Cinzel Decorative + Silkscreen + Rock Salt + Playwrite NZ Guides + Rubik Gemstones + Eater + Berkshire Swash + Rubik Storm + Sekuya + Bungee + Mogra + Nabla + Libre Barcode 39 */
-@import url("https://cdn.jsdelivr.net/gh/Null-Austin/pb-assets@main/PhantomSans-stylesheet.css");  /* P̶h̶a̶n̶t̶o̶m̶ ̶S̶a̶n̶s̶ /  Merriweather Sans */
-
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&family=Cinzel+Decorative:wght@400;700;900&family=Eater&family=Flow+Rounded&family=Libre+Barcode+39&family=Mogra&family=Nabla&family=Playwrite+NZ+Guides&family=Rock+Salt&family=Rubik+Gemstones&family=Rubik+Storm&family=Sekuya&family=Silkscreen:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets@main/PhantomSans-stylesheet.css"); /* Phantom Sans */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
-.neuland {
-  font-family: "Neuland";
-}
-.papyrus {
-  font-family: "Papyrus";
-}
-.mistral {
-  font-family: "Mistral";
-}
-.curlzmt {
-  font-family: "Curlz MT";
-}
-.betelgeuse {
-  font-family: "Betelgeuse";
-}
-.comicsans {
-  font-family: "Comic Sans MS";
-}
-.timesnewroman {
-  font-family: "Times New Roman";
-}
-.arial {
-  font-family: "Arial Regular";
-}
-.flowrounded {
-  font-family: "Flow Rounded", system-ui;
-}
-.cinzeldecorative {
-  font-family: "Cinzel Decorative", serif;
-}
-.silkscreen {
-  font-family: "Silkscreen", sans-serif;
-}
-.rocksalt {
-  font-family: "Rock Salt", cursive;
-}
-.phantomsans {
-  /* Merriweather Sans*/
-  font-family: "Phantom Sans 0.7", sans-serif;
-}
-.playwrite {
-  font-family: "Playwrite NZ Guides", cursive;
-}
-.rubikgemstones {
-  font-family: "Rubik Gemstones", system-ui;
-}
-.eater {
-  font-family: "Eater", serif;
-}
-.berkshire {
-  font-family: "Berkshire Swash", serif;
-}
-.rubikstorm {
-  font-family: "Rubik Storm", system-ui;
-}
-.sekuya {
-  font-family: "Sekuya", system-ui;
-}
-.bungee {
-  font-family: "Bungee", sans-serif;
-}
-.mogra {
-  font-family: "Mogra", system-ui;
-}
-.nabla {
-  font-family: "Nabla", system-ui;
-}
-.barcode {
-  font-family: "Libre Barcode 39", system-ui;
-}
+.neuland { font-family: "Neuland", sans-serif; }
+.papyrus { font-family: "Papyrus", "Comic Sans MS", cursive; }
+.mistral { font-family: "Mistral", cursive; }
+.curlzmt { font-family: "Curlz MT", cursive; }
+.betelgeuse { font-family: "Betelgeuse", fantasy; }
+.comicsans { font-family: "Comic Sans MS", "Comic Sans", cursive; }
+.timesnewroman { font-family: "Times New Roman", Times, serif; }
+.arial { font-family: Arial, "Inter", sans-serif; }
+.flowrounded { font-family: "Flow Rounded", system-ui; }
+.cinzeldecorative { font-family: "Cinzel Decorative", serif; }
+.silkscreen { font-family: "Silkscreen", sans-serif; }
+.rocksalt { font-family: "Rock Salt", cursive; }
+.phantomsans { font-family: "Merriweather Sans", sans-serif; }
+.playwrite { font-family: "Playwrite NZ Guides", cursive; }
+.rubikgemstones { font-family: "Rubik Gemstones", system-ui; }
+.eater { font-family: "Eater", serif; }
+.berkshire { font-family: "Berkshire Swash", serif; }
+.rubikstorm { font-family: "Rubik Storm", system-ui; }
+.sekuya { font-family: "Sekuya", system-ui; }
+.bungee { font-family: "Bungee", sans-serif; }
+.mogra { font-family: "Mogra", system-ui; }
+.nabla { font-family: "Nabla", system-ui; }
+.barcode { font-family: "Libre Barcode 39", system-ui; }
