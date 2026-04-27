@@ -8,7 +8,7 @@
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/TimesNewRoman-stylesheet.css"); /* Times New Roman */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/arial-style.css"); /* Arial */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Flow+Rounded&family=Rock+Salt&family=Silkscreen:wght@400;700&display=swap"); /* Flow Rounded + Cinzel Decorative + Silkscreen + Rock Salt + Playwrite NZ Guides + Rubik Gemstones + Eater + Berkshire Swash + Rubik Storm + Sekuya + Bungee + Mogra + Nabla + Libre Barcode 39 */
-@import url("https://cdn.jsdelivr.net/gh/Null-Austin/pb-assets@main/PhantomSans-stylesheet.css"); /* P̶h̶a̶n̶t̶o̶m̶ ̶S̶a̶n̶s̶ /  Merriweather Sans */
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&family=Cinzel+Decorative:wght@400;700;900&family=Eater&family=Flow+Rounded&family=Libre+Barcode+39&family=Mogra&family=Nabla&family=Playwrite+NZ+Guides&family=Rock+Salt&family=Rubik+Gemstones&family=Rubik+Storm&family=Sekuya&family=Silkscreen:wght@400;700&display=swap"); /* P̶h̶a̶n̶t̶o̶m̶ ̶S̶a̶n̶s̶ /  Merriweather Sans */
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -49,7 +49,8 @@ body {
 .rocksalt {
   font-family: "Rock Salt", cursive;
 }
-.phantomsans { /* Merriweather Sans*/
+.phantomsans {
+  /* Merriweather Sans*/
   font-family: "Phantom Sans 0.7", sans-serif;
 }
 .playwrite {
