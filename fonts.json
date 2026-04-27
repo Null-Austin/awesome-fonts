@@ -1,0 +1,112 @@
+{
+  "imports": [
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Neuland-Inline-stylesheet.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Papyrus-Regular-stylesheet.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/mistral-style.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/CurlzMT-stylesheet.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Betelgeuse-stylesheet.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/ComicSansMS-stylesheet.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/TimesNewRoman-stylesheet.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets/arial-style.css",
+    "https://cdn.jsdelivr.net/gh/null-austin/pb-assets@main/PhantomSans-stylesheet.css",
+    "https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&family=Cinzel+Decorative:wght@400;700;900&family=Eater&family=Flow+Rounded&family=Libre+Barcode+39&family=Mogra&family=Nabla&family=Playwrite+NZ+Guides&family=Rock+Salt&family=Rubik+Gemstones&family=Rubik+Storm&family=Sekuya&family=Silkscreen:wght@400;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=swap"
+  ],
+  "bodyFont": {
+    "fontFamily": "Montserrat, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+  },
+  "fonts": {
+    "neuland": {
+      "name": "Neuland Inline",
+      "fontFamily": "Neuland, sans-serif"
+    },
+    "papyrus": {
+      "name": "Papyrus",
+      "fontFamily": "Papyrus, Comic Sans MS, cursive"
+    },
+    "mistral": {
+      "name": "Mistral",
+      "fontFamily": "Mistral, cursive"
+    },
+    "curlzmt": {
+      "name": "Curlz MT",
+      "fontFamily": "Curlz MT, cursive"
+    },
+    "betelgeuse": {
+      "name": "Betelgeuse",
+      "fontFamily": "Betelgeuse, fantasy"
+    },
+    "comicsans": {
+      "name": "Comic Sans MS",
+      "fontFamily": "Comic Sans MS, Comic Sans, cursive"
+    },
+    "timesnewroman": {
+      "name": "Times New Roman",
+      "fontFamily": "Times New Roman, Times, serif"
+    },
+    "arial": {
+      "name": "Arial",
+      "fontFamily": "Arial, Inter, sans-serif"
+    },
+    "flowrounded": {
+      "name": "Flow Rounded",
+      "fontFamily": "Flow Rounded, system-ui"
+    },
+    "cinzeldecorative": {
+      "name": "Cinzel Decorative",
+      "fontFamily": "Cinzel Decorative, serif"
+    },
+    "silkscreen": {
+      "name": "Silkscreen",
+      "fontFamily": "Silkscreen, sans-serif"
+    },
+    "rocksalt": {
+      "name": "Rock Salt",
+      "fontFamily": "Rock Salt, cursive"
+    },
+    "phantomsans": {
+      "name": "Phantom Sans",
+      "fontFamily": "Merriweather Sans, sans-serif"
+    },
+    "playwrite": {
+      "name": "Playwrite NZ Guides",
+      "fontFamily": "Playwrite NZ Guides, cursive"
+    },
+    "rubikgemstones": {
+      "name": "Rubik Gemstones",
+      "fontFamily": "Rubik Gemstones, system-ui"
+    },
+    "eater": {
+      "name": "Eater",
+      "fontFamily": "Eater, serif"
+    },
+    "berkshire": {
+      "name": "Berkshire Swash",
+      "fontFamily": "Berkshire Swash, serif"
+    },
+    "rubikstorm": {
+      "name": "Rubik Storm",
+      "fontFamily": "Rubik Storm, system-ui"
+    },
+    "sekuya": {
+      "name": "Sekuya",
+      "fontFamily": "Sekuya, system-ui"
+    },
+    "bungee": {
+      "name": "Bungee",
+      "fontFamily": "Bungee, sans-serif"
+    },
+    "mogra": {
+      "name": "Mogra",
+      "fontFamily": "Mogra, system-ui"
+    },
+    "nabla": {
+      "name": "Nabla",
+      "fontFamily": "Nabla, system-ui"
+    },
+    "barcode": {
+      "name": "Libre Barcode 39",
+      "fontFamily": "Libre Barcode 39, system-ui"
+    }
+  }
+}

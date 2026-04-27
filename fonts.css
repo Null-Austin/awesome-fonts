@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;600;700&display=swap"); /* site fonts incl. Montserrat */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Neuland-Inline-stylesheet.css"); /* Neuland Inline */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/Papyrus-Regular-stylesheet.css"); /* Papyrus */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/mistral-style.css"); /* Mistral */
@@ -7,7 +6,6 @@
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/ComicSansMS-stylesheet.css"); /* Comic Sans MS */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/TimesNewRoman-stylesheet.css"); /* Times New Roman */
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets/arial-style.css"); /* Arial */
-@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee&family=Cinzel+Decorative:wght@400;700;900&family=Eater&family=Flow+Rounded&family=Libre+Barcode+39&family=Mogra&family=Nabla&family=Playwrite+NZ+Guides&family=Rock+Salt&family=Rubik+Gemstones&family=Rubik+Storm&family=Sekuya&family=Silkscreen:wght@400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/null-austin/pb-assets@main/PhantomSans-stylesheet.css"); /* Phantom Sans */
 body {
   font-family: "Montserrat", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
