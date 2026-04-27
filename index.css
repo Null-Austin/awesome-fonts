@@ -74,3 +74,23 @@ header p{margin:0;color:var(--muted);font-size:1rem}
 @media (max-width:520px){.font-name{white-space:normal;overflow:visible;text-overflow:unset}}
 
 .footer{margin-top:28px;color:var(--muted);font-size:0.9rem;text-align:center}
+
+/* search bar */
+#search-bar{margin-top:28px}
+#search-input{
+    width:100%;
+    max-width:1100px;
+    display:block;
+    background:var(--surface);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:var(--radius);
+    color:var(--text);
+    font-family:inherit;
+    font-size:1rem;
+    padding:10px 16px;
+    outline:none;
+    box-sizing:border-box;
+    transition:border-color 150ms;
+}
+#search-input:focus{border-color:var(--accent)}
+#search-stats{margin-top:8px;color:var(--muted);font-size:0.9rem;min-height:1.2em}

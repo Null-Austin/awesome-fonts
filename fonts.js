@@ -35,6 +35,7 @@ let root = async () => {
       let text3 = document.createElement("span");
 
       text1.classList.add("font");
+      text1.dataset.fontName = name.toLowerCase();
       text2.classList.add("font-name");
       text3.classList.add("sample");
 
@@ -47,6 +48,24 @@ let root = async () => {
 
       document.querySelector("#fonts").appendChild(text1);
     }
+
+    // search
+    const searchInput = document.getElementById("search-input");
+    const searchStats = document.getElementById("search-stats");
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.trim().toLowerCase();
+      const t0 = performance.now();
+      const cards = document.querySelectorAll("#fonts .font");
+      let visible = 0;
+      cards.forEach(card => {
+        const matches = !query || card.dataset.fontName.includes(query);
+        card.style.display = matches ? "" : "none";
+        if (matches) visible++;
+      });
+      const ms = performance.now() - t0;
+      searchStats.textContent = `Volume: ${visible}   Time taken: ${ms.toFixed(0)}ms / ${(ms / 1000).toFixed(3)}s`;
+    });
   })();
 };
 
