@@ -1,3 +1,6 @@
+### Archived
+This repo is now archived due to the loss of the old domain. (da-greatest.mom)
+
 # Awesome-Fonts
 Awesome fonts is a website dedicated to the *best* fonts on the internet, some examples include times new roman!
 
